@@ -57,6 +57,7 @@ class ClientController extends Controller
 
     public function update(Client $client)
     {
+        //Obteniendo y validando datos
         $data = request()->validate([
             'name' => 'required',
             'image' => 'image',
